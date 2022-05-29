@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  border:none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/Images/mainBackground.jpg);
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* inicio nav */
+nav{
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #0051f2;
+  padding: 0;
+}
+
+.logo{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo img {
+  width:50px;
+}
+
+#OpenCartButton {
+  margin-right: 20px;
+  width:50px;
+}
+/* fin nav */
+
+
+
+/* seccion del select */
+
+section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+select {
+  width: 12rem;
+  height:2rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px #8e512e;
+  color: #ffff;
+  background-color: #3f3f3fb3;
+}
+/* fin */
+
+/* contenedor en el que iran los productos disponibles */
+#MainCards {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* fin */
+
+/* contenedor del carrito. */
+#MainCartContainer{
+  display:none;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #45454565;
+}
+
+#cartWindow{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #525252e9;
+  color: white;
+  z-index: 1;
+  height: 100%;
+  width: 595px;
+  
+
+}
+
+.closeCartContainer{
+  width: 100%;
+  height:29px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* border-bottom: #212121 1px solid; */
+  box-shadow: 0px 1px 2px  #212121;
+}
+
+.closeCartContainer button{
+  background-color: rgb(75, 75, 75);
+  color: white;
+  width: 46px;
+  border: none;
+}
+  
+.closeCartContainer button:hover{
+  background-color: red;
+  color:white;
+  transition: all 0.3s;
+}
+
+#CartContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+/* fin */
+
+/* contenedor de cada tarjeta con los productos */
+
+.card-product {
+  margin: 1rem;
+  width: 10rem;
+  height: 13rem;
+  background-color: #005183;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-product {
+  width: 100%;
+  height: 50%;
+}
+
+.name-product {
+  margin-top: 0.8rem;
+  color: #f9f9f9;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.price-product {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.btn-add {
+  width: 8rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: rgb(0, 161, 54);
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-add:hover,
+.btn-add:focus {
+  cursor: pointer;
+  background-color: #0b1b93;
+  font-weight: 900;
+  color: #f4f4f4;
+}
+
+
+.btn-delete {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background-color: rgb(194, 0, 0);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/*fin contenedor de cada tarjeta con los productos */
+
+
+
+
+/* ventana de creacion de productos. */
+
+#createCardContainer{
+  display:none;
+  position:absolute;
+  width:100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #45454565;
+}
+
+#CreateCardWindow{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  height: 380px;
+  width: 560px;
+  background-color: #525252;
+  z-index: 1;
+}
+.closeSection{
+  width: 100%;
+  height:29px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* border-bottom: #212121 1px solid; */
+  box-shadow: 0px 1px 2px  #212121;
+}
+.closeSection button{
+  width: 46px;
+  border: none;
+  background-color: #525252;
+  color: white;
+}
+
+.closeSection button:hover{
+  background-color: red;
+  color:white;
+  transition: all 0.3s;
+  
+}
+.createCardForm{
+  height: 80%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 4%;
+}
+.createCardForm h1{
+  color: white;
+}
+.createCardForm label{
+  color: white;
+}
+.createCardForm input{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: none;
+  padding: 10px;
+  background-color: #747474;
+  color: white;
+  box-shadow: 0px 0px 5px #212121;
+}
+.CrPrbutton{
+  display: flex;
+  justify-content: center;
+}
+.createCardForm button{
+  color: white;
+  background: rgb(0, 88, 165);
+  border:0px;
+  width: 30%;
+  padding: 7px;
+  margin-top: 10px;
+}
+
+.createCardForm button:hover{
+  box-shadow: 0px 0px 8px rgb(93, 93, 93);
+  cursor: pointer;
+}
+/* fin create product windows */
+
+
+
+

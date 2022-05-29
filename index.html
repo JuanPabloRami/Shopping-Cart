@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://www.pngplay.com/wp-content/uploads/7/Cart-Logo-Background-PNG-Image.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Carrito de compras</title>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="http://assets.stickpng.com/images/5a0c40a65a997e1c2cea116c.png" alt="">
+      <p>CompuMundoHiperMegaRed</p>
+    </div>
+    <button id="NewProductButton" >New Product</button>
+    <abbr title=""><input id="OpenCartButton" type="image" title="Your Cart"  src="https://www.pngplay.com/wp-content/uploads/7/Cart-Logo-Background-PNG-Image.png"></abbr>
+  </nav>
+
+  <section>
+    <div class="SelectContainer">
+      
+    
+    
+    </div>
+    <div id="MainCards"></div>
+
+    
+
+  </section>
+
+
+  
+
+
+
+
+  
+
+  
+
+  <!-- seccion en la que se visualizarán los items agregados al carrito. -->
+  <div id="MainCartContainer">
+    <div id="cartWindow">
+      <div class="closeCartContainer">
+        <button id="CloseCartButton">X</button>
+      </div>
+      <h1>Your Cart</h1>
+      <div id="CartContainer"></div>
+      <button id="SaveProductsButton">Buy!</button>
+    </div>
+  </div>
+    
+
+  
+  <!-- end -->
+
+    <!-- ventana de creacion de productos -->
+    <div id="createCardContainer">
+      <div id="CreateCardWindow">
+        <div class="closeSection">
+          <button id="CloseButton">X</button>
+        </div>
+        <div class="createCardForm">
+          <h1>Create a product</h1>
+          <label for="CrPrName">Name</label>
+          <input id="CrPrName" type="text" placeholder="example: glock 9mm">
+          <label for="CrPrName">Price</label>
+          <input id="CrPrPrice" type="text" placeholder="example: 2000">
+          <label for="CrPrImg">Image</label>
+          <input id="CrPrImg" type="file">
+          <div class="CrPrbutton"><button id="CrPrbutton">Create Product</button></div>
+        </div>
+      </div>
+    </div>
+    <!-- end  -->
+
+
+  <script src="app.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>
